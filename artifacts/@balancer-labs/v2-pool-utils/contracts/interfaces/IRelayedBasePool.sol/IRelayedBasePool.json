@@ -1,0 +1,24 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "IRelayedBasePool",
+  "sourceName": "@balancer-labs/v2-pool-utils/contracts/interfaces/IRelayedBasePool.sol",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "getRelayer",
+      "outputs": [
+        {
+          "internalType": "contract IBasePoolRelayer",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}
