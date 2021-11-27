@@ -22,7 +22,7 @@ import "@balancer-labs/v2-solidity-utils/contracts/math/FixedPoint.sol";
 
 import "@balancer-labs/v2-pool-utils/contracts/interfaces/IRelayedBasePool.sol";
 
-import "./IAssetManager.sol";
+import "./interfaces/IAssetManager.sol";
 
 pragma solidity ^0.7.0;
 pragma experimental ABIEncoderV2;

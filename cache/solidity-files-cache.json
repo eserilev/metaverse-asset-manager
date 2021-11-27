@@ -1,43 +1,6 @@
 {
   "_format": "hh-sol-cache-2",
   "files": {
-    "/Users/eitan/Documents/Projects/Blockchain/Hackathons/chainlink-2021/contracts/IAssetManager.sol": {
-      "lastModificationDate": 1637904633227,
-      "contentHash": "b9a1557a19793df2750ed5b3ca3f7a15",
-      "sourceName": "contracts/IAssetManager.sol",
-      "solcConfig": {
-        "version": "0.7.3",
-        "settings": {
-          "optimizer": {
-            "enabled": false,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/IERC20.sol"
-      ],
-      "versionPragmas": [
-        "^0.7.0"
-      ],
-      "artifacts": [
-        "IAssetManager"
-      ]
-    },
     "/Users/eitan/Documents/Projects/Blockchain/Hackathons/chainlink-2021/node_modules/@balancer-labs/v2-solidity-utils/contracts/openzeppelin/IERC20.sol": {
       "lastModificationDate": 1637903061727,
       "contentHash": "227d410099f794483090324d1492bc09",
@@ -74,8 +37,8 @@
       ]
     },
     "/Users/eitan/Documents/Projects/Blockchain/Hackathons/chainlink-2021/contracts/RewardsAssetManager.sol": {
-      "lastModificationDate": 1637903960297,
-      "contentHash": "7b1e230d16ec3e060b9c9b4aca326172",
+      "lastModificationDate": 1637978638215,
+      "contentHash": "102ec6150cd74016761d120223759d41",
       "sourceName": "contracts/RewardsAssetManager.sol",
       "solcConfig": {
         "version": "0.7.3",
@@ -106,7 +69,7 @@
         "@balancer-labs/v2-solidity-utils/contracts/math/Math.sol",
         "@balancer-labs/v2-solidity-utils/contracts/math/FixedPoint.sol",
         "@balancer-labs/v2-pool-utils/contracts/interfaces/IRelayedBasePool.sol",
-        "./IAssetManager.sol"
+        "./interfaces/IAssetManager.sol"
       ],
       "versionPragmas": [
         "^0.7.0"
@@ -666,6 +629,2394 @@
       ],
       "artifacts": [
         "MetaverseAssetManager"
+      ]
+    },
+    "/Users/eitan/Documents/Projects/Blockchain/Hackathons/chainlink-2021/node_modules/@balancer-labs/v2-solidity-utils/contracts/openzeppelin/EnumerableSet.sol": {
+      "lastModificationDate": 1637903061727,
+      "contentHash": "690c43f535191a901c4e7ffac770cced",
+      "sourceName": "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/EnumerableSet.sol",
+      "solcConfig": {
+        "version": "0.7.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../helpers/BalancerErrors.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "EnumerableSet"
+      ]
+    },
+    "/Users/eitan/Documents/Projects/Blockchain/Hackathons/chainlink-2021/node_modules/@balancer-labs/v2-solidity-utils/contracts/openzeppelin/AccessControl.sol": {
+      "lastModificationDate": 1637903061724,
+      "contentHash": "7a8f3af252b75bdb7241397c4dedea75",
+      "sourceName": "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/AccessControl.sol",
+      "solcConfig": {
+        "version": "0.7.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../helpers/BalancerErrors.sol",
+        "./EnumerableSet.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "AccessControl"
+      ]
+    },
+    "/Users/eitan/Documents/Projects/Blockchain/Hackathons/chainlink-2021/contracts/TestWETH.sol": {
+      "lastModificationDate": 1637976526187,
+      "contentHash": "9ded452e829544d9215b20a19d55e0fd",
+      "sourceName": "contracts/TestWETH.sol",
+      "solcConfig": {
+        "version": "0.7.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@balancer-labs/v2-solidity-utils/contracts/misc/IWETH.sol",
+        "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/AccessControl.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "TestWETH"
+      ]
+    },
+    "/Users/eitan/Documents/Projects/Blockchain/Hackathons/chainlink-2021/node_modules/@balancer-labs/v2-solidity-utils/contracts/openzeppelin/ERC20.sol": {
+      "lastModificationDate": 1637903061726,
+      "contentHash": "c3264e84bb80b3d7c8539e5a845a31fc",
+      "sourceName": "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/ERC20.sol",
+      "solcConfig": {
+        "version": "0.7.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../helpers/BalancerErrors.sol",
+        "./IERC20.sol",
+        "./SafeMath.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "ERC20"
+      ]
+    },
+    "/Users/eitan/Documents/Projects/Blockchain/Hackathons/chainlink-2021/node_modules/@balancer-labs/v2-solidity-utils/contracts/openzeppelin/SafeMath.sol": {
+      "lastModificationDate": 1637903061729,
+      "contentHash": "82a87a3a78fe68a15646cdd782349013",
+      "sourceName": "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/SafeMath.sol",
+      "solcConfig": {
+        "version": "0.7.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../helpers/BalancerErrors.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "SafeMath"
+      ]
+    },
+    "/Users/eitan/Documents/Projects/Blockchain/Hackathons/chainlink-2021/node_modules/@balancer-labs/v2-solidity-utils/contracts/openzeppelin/ERC20Permit.sol": {
+      "lastModificationDate": 1637903061726,
+      "contentHash": "fa7e5f54074131889bba7968376139a2",
+      "sourceName": "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/ERC20Permit.sol",
+      "solcConfig": {
+        "version": "0.7.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./ERC20.sol",
+        "./IERC20Permit.sol",
+        "./EIP712.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "ERC20Permit"
+      ]
+    },
+    "/Users/eitan/Documents/Projects/Blockchain/Hackathons/chainlink-2021/node_modules/@balancer-labs/v2-solidity-utils/contracts/openzeppelin/IERC20Permit.sol": {
+      "lastModificationDate": 1637903061727,
+      "contentHash": "39ad845c9adeb3e04e172ffe975a7ea8",
+      "sourceName": "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/IERC20Permit.sol",
+      "solcConfig": {
+        "version": "0.7.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "IERC20Permit"
+      ]
+    },
+    "/Users/eitan/Documents/Projects/Blockchain/Hackathons/chainlink-2021/node_modules/@balancer-labs/v2-solidity-utils/contracts/openzeppelin/EIP712.sol": {
+      "lastModificationDate": 1637903061724,
+      "contentHash": "3f72f246d20ae70c8162f0d42647963a",
+      "sourceName": "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/EIP712.sol",
+      "solcConfig": {
+        "version": "0.7.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "EIP712"
+      ]
+    },
+    "/Users/eitan/Documents/Projects/Blockchain/Hackathons/chainlink-2021/contracts/TestToken.sol": {
+      "lastModificationDate": 1637976534399,
+      "contentHash": "03a2080a373ba8c7d1faf8879df7d7aa",
+      "sourceName": "contracts/TestToken.sol",
+      "solcConfig": {
+        "version": "0.7.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/ERC20.sol",
+        "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/ERC20Burnable.sol",
+        "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/ERC20Permit.sol",
+        "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/AccessControl.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "TestToken"
+      ]
+    },
+    "/Users/eitan/Documents/Projects/Blockchain/Hackathons/chainlink-2021/node_modules/@balancer-labs/v2-solidity-utils/contracts/openzeppelin/ERC20Burnable.sol": {
+      "lastModificationDate": 1637903061726,
+      "contentHash": "e1f375a9fd0668548ce65621736986ff",
+      "sourceName": "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/ERC20Burnable.sol",
+      "solcConfig": {
+        "version": "0.7.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./ERC20.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "ERC20Burnable"
+      ]
+    },
+    "/Users/eitan/Documents/Projects/Blockchain/Hackathons/chainlink-2021/contracts/Authorizer.sol": {
+      "lastModificationDate": 1637978638196,
+      "contentHash": "d97b2f4f0c1421be3e05bd72c58566a8",
+      "sourceName": "contracts/Authorizer.sol",
+      "solcConfig": {
+        "version": "0.7.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./interfaces/IAuthorizer.sol",
+        "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/AccessControl.sol",
+        "@balancer-labs/v2-solidity-utils/contracts/helpers/InputHelpers.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "Authorizer"
+      ]
+    },
+    "/Users/eitan/Documents/Projects/Blockchain/Hackathons/chainlink-2021/node_modules/@balancer-labs/v2-solidity-utils/contracts/helpers/InputHelpers.sol": {
+      "lastModificationDate": 1637903061721,
+      "contentHash": "6c43de5bbe0e6b8ba77907e54eba6ccf",
+      "sourceName": "@balancer-labs/v2-solidity-utils/contracts/helpers/InputHelpers.sol",
+      "solcConfig": {
+        "version": "0.7.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../openzeppelin/IERC20.sol",
+        "./BalancerErrors.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "InputHelpers"
+      ]
+    },
+    "/Users/eitan/Documents/Projects/Blockchain/Hackathons/chainlink-2021/contracts/AssetHelpers.sol": {
+      "lastModificationDate": 1637979315727,
+      "contentHash": "e7d0fd367576f6bba1fbd39c454fc1dd",
+      "sourceName": "contracts/AssetHelpers.sol",
+      "solcConfig": {
+        "version": "0.7.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/IERC20.sol",
+        "@balancer-labs/v2-solidity-utils/contracts/misc/IWETH.sol",
+        "./interfaces/IAsset.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "AssetHelpers"
+      ]
+    },
+    "/Users/eitan/Documents/Projects/Blockchain/Hackathons/chainlink-2021/contracts/interfaces/IAsset.sol": {
+      "lastModificationDate": 1637978449515,
+      "contentHash": "0749b67903ff90b2d6f42235712af1dc",
+      "sourceName": "contracts/interfaces/IAsset.sol",
+      "solcConfig": {
+        "version": "0.7.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "IAsset"
+      ]
+    },
+    "/Users/eitan/Documents/Projects/Blockchain/Hackathons/chainlink-2021/contracts/AssetTransfersHandler.sol": {
+      "lastModificationDate": 1637978898200,
+      "contentHash": "b6ae72c0c4ee5f4a7ef88798008e08cf",
+      "sourceName": "contracts/AssetTransfersHandler.sol",
+      "solcConfig": {
+        "version": "0.7.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@balancer-labs/v2-solidity-utils/contracts/math/Math.sol",
+        "@balancer-labs/v2-solidity-utils/contracts/helpers/BalancerErrors.sol",
+        "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/IERC20.sol",
+        "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/SafeERC20.sol",
+        "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/Address.sol",
+        "@balancer-labs/v2-solidity-utils/contracts/misc/IWETH.sol",
+        "./interfaces/IAsset.sol",
+        "./interfaces/IVault.sol",
+        "./AssetHelpers.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "AssetTransfersHandler"
+      ]
+    },
+    "/Users/eitan/Documents/Projects/Blockchain/Hackathons/chainlink-2021/node_modules/@balancer-labs/v2-solidity-utils/contracts/openzeppelin/SafeERC20.sol": {
+      "lastModificationDate": 1637903061729,
+      "contentHash": "0dd01dfe51c18c72fdff0714c4fd8ceb",
+      "sourceName": "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/SafeERC20.sol",
+      "solcConfig": {
+        "version": "0.7.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../helpers/BalancerErrors.sol",
+        "./IERC20.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "SafeERC20"
+      ]
+    },
+    "/Users/eitan/Documents/Projects/Blockchain/Hackathons/chainlink-2021/node_modules/@balancer-labs/v2-solidity-utils/contracts/openzeppelin/Address.sol": {
+      "lastModificationDate": 1637903061724,
+      "contentHash": "b695914d34953125d6a034fc69a9922a",
+      "sourceName": "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/Address.sol",
+      "solcConfig": {
+        "version": "0.7.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../helpers/BalancerErrors.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "Address"
+      ]
+    },
+    "/Users/eitan/Documents/Projects/Blockchain/Hackathons/chainlink-2021/contracts/interfaces/IVault.sol": {
+      "lastModificationDate": 1637978346665,
+      "contentHash": "e40c42184ca0a1ac12f27c26fe883f48",
+      "sourceName": "contracts/interfaces/IVault.sol",
+      "solcConfig": {
+        "version": "0.7.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/IERC20.sol",
+        "@balancer-labs/v2-solidity-utils/contracts/helpers/ISignaturesValidator.sol",
+        "@balancer-labs/v2-solidity-utils/contracts/helpers/ITemporarilyPausable.sol",
+        "@balancer-labs/v2-solidity-utils/contracts/misc/IWETH.sol",
+        "./IAsset.sol",
+        "./IAuthorizer.sol",
+        "./IFlashLoanRecipient.sol",
+        "./IProtocolFeesCollector.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "IVault"
+      ]
+    },
+    "/Users/eitan/Documents/Projects/Blockchain/Hackathons/chainlink-2021/contracts/interfaces/IAuthorizer.sol": {
+      "lastModificationDate": 1637978342230,
+      "contentHash": "d4bb3d50e3b75f5e5e58ca7d57acb3b3",
+      "sourceName": "contracts/interfaces/IAuthorizer.sol",
+      "solcConfig": {
+        "version": "0.7.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "IAuthorizer"
+      ]
+    },
+    "/Users/eitan/Documents/Projects/Blockchain/Hackathons/chainlink-2021/contracts/interfaces/IFlashLoanRecipient.sol": {
+      "lastModificationDate": 1637978540425,
+      "contentHash": "3b77766e727522d925dd742a935ec967",
+      "sourceName": "contracts/interfaces/IFlashLoanRecipient.sol",
+      "solcConfig": {
+        "version": "0.7.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/IERC20.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "IFlashLoanRecipient"
+      ]
+    },
+    "/Users/eitan/Documents/Projects/Blockchain/Hackathons/chainlink-2021/contracts/interfaces/IProtocolFeesCollector.sol": {
+      "lastModificationDate": 1637978540425,
+      "contentHash": "9ffb5c3c4b7742dc111b26d5ab51e0a7",
+      "sourceName": "contracts/interfaces/IProtocolFeesCollector.sol",
+      "solcConfig": {
+        "version": "0.7.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/IERC20.sol",
+        "./IVault.sol",
+        "./IAuthorizer.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "IProtocolFeesCollector"
+      ]
+    },
+    "/Users/eitan/Documents/Projects/Blockchain/Hackathons/chainlink-2021/contracts/interfaces/IPoolSwapStructs.sol": {
+      "lastModificationDate": 1637979198433,
+      "contentHash": "6b88472354b40ff90a48454ec9a33f8d",
+      "sourceName": "contracts/interfaces/IPoolSwapStructs.sol",
+      "solcConfig": {
+        "version": "0.7.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/IERC20.sol",
+        "./IVault.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "IPoolSwapStructs"
+      ]
+    },
+    "/Users/eitan/Documents/Projects/Blockchain/Hackathons/chainlink-2021/contracts/Swaps.sol": {
+      "lastModificationDate": 1637978713729,
+      "contentHash": "12421d38e1af1f7b9fd61b4fa153728f",
+      "sourceName": "contracts/Swaps.sol",
+      "solcConfig": {
+        "version": "0.7.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@balancer-labs/v2-solidity-utils/contracts/math/Math.sol",
+        "@balancer-labs/v2-solidity-utils/contracts/helpers/BalancerErrors.sol",
+        "@balancer-labs/v2-solidity-utils/contracts/helpers/InputHelpers.sol",
+        "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/EnumerableMap.sol",
+        "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/EnumerableSet.sol",
+        "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/IERC20.sol",
+        "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/ReentrancyGuard.sol",
+        "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/SafeCast.sol",
+        "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/SafeERC20.sol",
+        "./PoolBalances.sol",
+        "./interfaces/IPoolSwapStructs.sol",
+        "./interfaces/IGeneralPool.sol",
+        "./interfaces/IMinimalSwapInfoPool.sol",
+        "./balances/BalanceAllocation.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "Swaps"
+      ]
+    },
+    "/Users/eitan/Documents/Projects/Blockchain/Hackathons/chainlink-2021/node_modules/@balancer-labs/v2-solidity-utils/contracts/openzeppelin/EnumerableMap.sol": {
+      "lastModificationDate": 1637903061726,
+      "contentHash": "a1b2b77636d923943d1c2aad2c91aff7",
+      "sourceName": "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/EnumerableMap.sol",
+      "solcConfig": {
+        "version": "0.7.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC20.sol",
+        "../helpers/BalancerErrors.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "EnumerableMap"
+      ]
+    },
+    "/Users/eitan/Documents/Projects/Blockchain/Hackathons/chainlink-2021/node_modules/@balancer-labs/v2-solidity-utils/contracts/openzeppelin/ReentrancyGuard.sol": {
+      "lastModificationDate": 1637903061728,
+      "contentHash": "2862bc5c9b7af120c600f598682307b7",
+      "sourceName": "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/ReentrancyGuard.sol",
+      "solcConfig": {
+        "version": "0.7.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../helpers/BalancerErrors.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "ReentrancyGuard"
+      ]
+    },
+    "/Users/eitan/Documents/Projects/Blockchain/Hackathons/chainlink-2021/node_modules/@balancer-labs/v2-solidity-utils/contracts/openzeppelin/SafeCast.sol": {
+      "lastModificationDate": 1637903061728,
+      "contentHash": "4a820d1981f326ae8b722220514c3f26",
+      "sourceName": "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/SafeCast.sol",
+      "solcConfig": {
+        "version": "0.7.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../helpers/BalancerErrors.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "SafeCast"
+      ]
+    },
+    "/Users/eitan/Documents/Projects/Blockchain/Hackathons/chainlink-2021/contracts/PoolBalances.sol": {
+      "lastModificationDate": 1637978738566,
+      "contentHash": "181f3d782f8a36ad8e6349375276668d",
+      "sourceName": "contracts/PoolBalances.sol",
+      "solcConfig": {
+        "version": "0.7.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@balancer-labs/v2-solidity-utils/contracts/math/Math.sol",
+        "@balancer-labs/v2-solidity-utils/contracts/helpers/BalancerErrors.sol",
+        "@balancer-labs/v2-solidity-utils/contracts/helpers/InputHelpers.sol",
+        "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/IERC20.sol",
+        "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/ReentrancyGuard.sol",
+        "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/SafeERC20.sol",
+        "./Fees.sol",
+        "./PoolTokens.sol",
+        "./UserBalance.sol",
+        "./interfaces/IBasePool.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "PoolBalances"
+      ]
+    },
+    "/Users/eitan/Documents/Projects/Blockchain/Hackathons/chainlink-2021/contracts/interfaces/IGeneralPool.sol": {
+      "lastModificationDate": 1637979229691,
+      "contentHash": "51cc69fb4aa6c8c878451567242640f8",
+      "sourceName": "contracts/interfaces/IGeneralPool.sol",
+      "solcConfig": {
+        "version": "0.7.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IBasePool.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "IGeneralPool"
+      ]
+    },
+    "/Users/eitan/Documents/Projects/Blockchain/Hackathons/chainlink-2021/contracts/interfaces/IMinimalSwapInfoPool.sol": {
+      "lastModificationDate": 1637979261132,
+      "contentHash": "aa44a40372d53dc087b6d01048b0a663",
+      "sourceName": "contracts/interfaces/IMinimalSwapInfoPool.sol",
+      "solcConfig": {
+        "version": "0.7.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IBasePool.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "IMinimalSwapInfoPool"
+      ]
+    },
+    "/Users/eitan/Documents/Projects/Blockchain/Hackathons/chainlink-2021/contracts/balances/BalanceAllocation.sol": {
+      "lastModificationDate": 1637978985687,
+      "contentHash": "9271eb0c3b0c8028351807222c509c1a",
+      "sourceName": "contracts/balances/BalanceAllocation.sol",
+      "solcConfig": {
+        "version": "0.7.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@balancer-labs/v2-solidity-utils/contracts/math/Math.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "BalanceAllocation"
+      ]
+    },
+    "/Users/eitan/Documents/Projects/Blockchain/Hackathons/chainlink-2021/contracts/Fees.sol": {
+      "lastModificationDate": 1637978638175,
+      "contentHash": "7ea5af196bab80e3384dd0e8ad2ad320",
+      "sourceName": "contracts/Fees.sol",
+      "solcConfig": {
+        "version": "0.7.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@balancer-labs/v2-solidity-utils/contracts/math/FixedPoint.sol",
+        "@balancer-labs/v2-solidity-utils/contracts/helpers/BalancerErrors.sol",
+        "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/IERC20.sol",
+        "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/ReentrancyGuard.sol",
+        "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/SafeERC20.sol",
+        "./ProtocolFeesCollector.sol",
+        "./VaultAuthorization.sol",
+        "./interfaces/IVault.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "Fees"
+      ]
+    },
+    "/Users/eitan/Documents/Projects/Blockchain/Hackathons/chainlink-2021/contracts/PoolTokens.sol": {
+      "lastModificationDate": 1637978768547,
+      "contentHash": "778d8a5aaabd34c5304b00f7844fdba6",
+      "sourceName": "contracts/PoolTokens.sol",
+      "solcConfig": {
+        "version": "0.7.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@balancer-labs/v2-solidity-utils/contracts/helpers/BalancerErrors.sol",
+        "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/ReentrancyGuard.sol",
+        "./AssetManagers.sol",
+        "./PoolRegistry.sol",
+        "./balances/BalanceAllocation.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "PoolTokens"
+      ]
+    },
+    "/Users/eitan/Documents/Projects/Blockchain/Hackathons/chainlink-2021/contracts/UserBalance.sol": {
+      "lastModificationDate": 1637978826084,
+      "contentHash": "1c0957e8ac23def3ca5d0c5936992fb3",
+      "sourceName": "contracts/UserBalance.sol",
+      "solcConfig": {
+        "version": "0.7.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@balancer-labs/v2-solidity-utils/contracts/helpers/BalancerErrors.sol",
+        "@balancer-labs/v2-solidity-utils/contracts/math/Math.sol",
+        "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/IERC20.sol",
+        "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/ReentrancyGuard.sol",
+        "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/SafeCast.sol",
+        "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/SafeERC20.sol",
+        "./AssetTransfersHandler.sol",
+        "./VaultAuthorization.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "UserBalance"
+      ]
+    },
+    "/Users/eitan/Documents/Projects/Blockchain/Hackathons/chainlink-2021/contracts/interfaces/IBasePool.sol": {
+      "lastModificationDate": 1637979159659,
+      "contentHash": "c906d6495af7cd7e9dfc8d078175cdaf",
+      "sourceName": "contracts/interfaces/IBasePool.sol",
+      "solcConfig": {
+        "version": "0.7.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IVault.sol",
+        "./IPoolSwapStructs.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "IBasePool"
+      ]
+    },
+    "/Users/eitan/Documents/Projects/Blockchain/Hackathons/chainlink-2021/contracts/ProtocolFeesCollector.sol": {
+      "lastModificationDate": 1637978666735,
+      "contentHash": "1679607ef07c9f4ed146113c26ee0125",
+      "sourceName": "contracts/ProtocolFeesCollector.sol",
+      "solcConfig": {
+        "version": "0.7.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@balancer-labs/v2-solidity-utils/contracts/helpers/InputHelpers.sol",
+        "@balancer-labs/v2-solidity-utils/contracts/helpers/Authentication.sol",
+        "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/ReentrancyGuard.sol",
+        "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/SafeERC20.sol",
+        "./interfaces/IProtocolFeesCollector.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "ProtocolFeesCollector"
+      ]
+    },
+    "/Users/eitan/Documents/Projects/Blockchain/Hackathons/chainlink-2021/contracts/VaultAuthorization.sol": {
+      "lastModificationDate": 1637978687277,
+      "contentHash": "083a289593a393559f4e3ead8deb34dc",
+      "sourceName": "contracts/VaultAuthorization.sol",
+      "solcConfig": {
+        "version": "0.7.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@balancer-labs/v2-solidity-utils/contracts/helpers/BalancerErrors.sol",
+        "@balancer-labs/v2-solidity-utils/contracts/helpers/Authentication.sol",
+        "@balancer-labs/v2-solidity-utils/contracts/helpers/TemporarilyPausable.sol",
+        "@balancer-labs/v2-solidity-utils/contracts/helpers/BalancerErrors.sol",
+        "@balancer-labs/v2-solidity-utils/contracts/helpers/SignaturesValidator.sol",
+        "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/ReentrancyGuard.sol",
+        "./interfaces/IVault.sol",
+        "./interfaces/IAuthorizer.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "VaultAuthorization"
+      ]
+    },
+    "/Users/eitan/Documents/Projects/Blockchain/Hackathons/chainlink-2021/node_modules/@balancer-labs/v2-solidity-utils/contracts/helpers/Authentication.sol": {
+      "lastModificationDate": 1637903061717,
+      "contentHash": "afc6674b750c2a2bce9e9a1e1d47b7aa",
+      "sourceName": "@balancer-labs/v2-solidity-utils/contracts/helpers/Authentication.sol",
+      "solcConfig": {
+        "version": "0.7.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./BalancerErrors.sol",
+        "./IAuthentication.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "Authentication"
+      ]
+    },
+    "/Users/eitan/Documents/Projects/Blockchain/Hackathons/chainlink-2021/node_modules/@balancer-labs/v2-solidity-utils/contracts/helpers/IAuthentication.sol": {
+      "lastModificationDate": 1637903061720,
+      "contentHash": "6bf425ca65051509b82564fa5cd3f414",
+      "sourceName": "@balancer-labs/v2-solidity-utils/contracts/helpers/IAuthentication.sol",
+      "solcConfig": {
+        "version": "0.7.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "IAuthentication"
+      ]
+    },
+    "/Users/eitan/Documents/Projects/Blockchain/Hackathons/chainlink-2021/node_modules/@balancer-labs/v2-solidity-utils/contracts/helpers/TemporarilyPausable.sol": {
+      "lastModificationDate": 1637903061721,
+      "contentHash": "f5ca7970aa1f94cece6934d34fbf72e3",
+      "sourceName": "@balancer-labs/v2-solidity-utils/contracts/helpers/TemporarilyPausable.sol",
+      "solcConfig": {
+        "version": "0.7.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./BalancerErrors.sol",
+        "./ITemporarilyPausable.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "TemporarilyPausable"
+      ]
+    },
+    "/Users/eitan/Documents/Projects/Blockchain/Hackathons/chainlink-2021/node_modules/@balancer-labs/v2-solidity-utils/contracts/helpers/SignaturesValidator.sol": {
+      "lastModificationDate": 1637903061721,
+      "contentHash": "f948e1faa3443d183ae302b872e9d067",
+      "sourceName": "@balancer-labs/v2-solidity-utils/contracts/helpers/SignaturesValidator.sol",
+      "solcConfig": {
+        "version": "0.7.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./BalancerErrors.sol",
+        "./ISignaturesValidator.sol",
+        "../openzeppelin/EIP712.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "SignaturesValidator"
+      ]
+    },
+    "/Users/eitan/Documents/Projects/Blockchain/Hackathons/chainlink-2021/contracts/AssetManagers.sol": {
+      "lastModificationDate": 1637978796403,
+      "contentHash": "d71089fcdc9174863d8660c16fc495fa",
+      "sourceName": "contracts/AssetManagers.sol",
+      "solcConfig": {
+        "version": "0.7.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@balancer-labs/v2-solidity-utils/contracts/math/Math.sol",
+        "@balancer-labs/v2-solidity-utils/contracts/helpers/BalancerErrors.sol",
+        "@balancer-labs/v2-solidity-utils/contracts/helpers/InputHelpers.sol",
+        "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/IERC20.sol",
+        "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/SafeERC20.sol",
+        "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/ReentrancyGuard.sol",
+        "./UserBalance.sol",
+        "./balances/BalanceAllocation.sol",
+        "./balances/GeneralPoolsBalance.sol",
+        "./balances/MinimalSwapInfoPoolsBalance.sol",
+        "./balances/TwoTokenPoolsBalance.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "AssetManagers"
+      ]
+    },
+    "/Users/eitan/Documents/Projects/Blockchain/Hackathons/chainlink-2021/contracts/PoolRegistry.sol": {
+      "lastModificationDate": 1637979095557,
+      "contentHash": "2fd84023dddd4b5dda146111b380a755",
+      "sourceName": "contracts/PoolRegistry.sol",
+      "solcConfig": {
+        "version": "0.7.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@balancer-labs/v2-solidity-utils/contracts/helpers/BalancerErrors.sol",
+        "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/ReentrancyGuard.sol",
+        "./VaultAuthorization.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "PoolRegistry"
+      ]
+    },
+    "/Users/eitan/Documents/Projects/Blockchain/Hackathons/chainlink-2021/contracts/balances/GeneralPoolsBalance.sol": {
+      "lastModificationDate": 1637979020588,
+      "contentHash": "b768b63b657c2f0fb4ebe6821004f133",
+      "sourceName": "contracts/balances/GeneralPoolsBalance.sol",
+      "solcConfig": {
+        "version": "0.7.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@balancer-labs/v2-solidity-utils/contracts/helpers/BalancerErrors.sol",
+        "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/EnumerableMap.sol",
+        "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/IERC20.sol",
+        "./BalanceAllocation.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "GeneralPoolsBalance"
+      ]
+    },
+    "/Users/eitan/Documents/Projects/Blockchain/Hackathons/chainlink-2021/contracts/balances/MinimalSwapInfoPoolsBalance.sol": {
+      "lastModificationDate": 1637979051774,
+      "contentHash": "cd41d5aa8abf9528e1e7af6f2401782d",
+      "sourceName": "contracts/balances/MinimalSwapInfoPoolsBalance.sol",
+      "solcConfig": {
+        "version": "0.7.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@balancer-labs/v2-solidity-utils/contracts/helpers/BalancerErrors.sol",
+        "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/EnumerableSet.sol",
+        "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/IERC20.sol",
+        "./BalanceAllocation.sol",
+        "../PoolRegistry.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "MinimalSwapInfoPoolsBalance"
+      ]
+    },
+    "/Users/eitan/Documents/Projects/Blockchain/Hackathons/chainlink-2021/contracts/balances/TwoTokenPoolsBalance.sol": {
+      "lastModificationDate": 1637979128804,
+      "contentHash": "6e08ec65115d8edcc0fd1a59f8c0ed84",
+      "sourceName": "contracts/balances/TwoTokenPoolsBalance.sol",
+      "solcConfig": {
+        "version": "0.7.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@balancer-labs/v2-solidity-utils/contracts/helpers/BalancerErrors.sol",
+        "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/IERC20.sol",
+        "./BalanceAllocation.sol",
+        "../PoolRegistry.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "TwoTokenPoolsBalance"
+      ]
+    },
+    "/Users/eitan/Documents/Projects/Blockchain/Hackathons/chainlink-2021/contracts/Vault.sol": {
+      "lastModificationDate": 1637978638175,
+      "contentHash": "aba99ee7d5ca69571e2e7fec3b6f325d",
+      "sourceName": "contracts/Vault.sol",
+      "solcConfig": {
+        "version": "0.7.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@balancer-labs/v2-solidity-utils/contracts/misc/IWETH.sol",
+        "./interfaces/IAuthorizer.sol",
+        "./VaultAuthorization.sol",
+        "./FlashLoans.sol",
+        "./Swaps.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "Vault"
+      ]
+    },
+    "/Users/eitan/Documents/Projects/Blockchain/Hackathons/chainlink-2021/contracts/FlashLoans.sol": {
+      "lastModificationDate": 1637978638175,
+      "contentHash": "52c704d00e186fd0890e357f75a972eb",
+      "sourceName": "contracts/FlashLoans.sol",
+      "solcConfig": {
+        "version": "0.7.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@balancer-labs/v2-solidity-utils/contracts/helpers/BalancerErrors.sol",
+        "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/IERC20.sol",
+        "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/ReentrancyGuard.sol",
+        "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/SafeERC20.sol",
+        "./Fees.sol",
+        "./interfaces/IFlashLoanRecipient.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "FlashLoans"
+      ]
+    },
+    "/Users/eitan/Documents/Projects/Blockchain/Hackathons/chainlink-2021/contracts/interfaces/IAssetManager.sol": {
+      "lastModificationDate": 1637978338148,
+      "contentHash": "b9a1557a19793df2750ed5b3ca3f7a15",
+      "sourceName": "contracts/interfaces/IAssetManager.sol",
+      "solcConfig": {
+        "version": "0.7.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/IERC20.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "IAssetManager"
+      ]
+    },
+    "/Users/eitan/Documents/Projects/Blockchain/Hackathons/chainlink-2021/contracts/WeightedMath.sol": {
+      "lastModificationDate": 1637979707528,
+      "contentHash": "de7e7ee47fc9c540cd42ad513de60239",
+      "sourceName": "contracts/WeightedMath.sol",
+      "solcConfig": {
+        "version": "0.7.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@balancer-labs/v2-solidity-utils/contracts/math/FixedPoint.sol",
+        "@balancer-labs/v2-solidity-utils/contracts/math/Math.sol",
+        "@balancer-labs/v2-solidity-utils/contracts/helpers/InputHelpers.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "WeightedMath"
+      ]
+    },
+    "/Users/eitan/Documents/Projects/Blockchain/Hackathons/chainlink-2021/node_modules/@balancer-labs/v2-pool-utils/contracts/BasePool.sol": {
+      "lastModificationDate": 1637903121860,
+      "contentHash": "740d6d8cb5d6cd46e7d257b36ecd3131",
+      "sourceName": "@balancer-labs/v2-pool-utils/contracts/BasePool.sol",
+      "solcConfig": {
+        "version": "0.7.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@balancer-labs/v2-solidity-utils/contracts/math/Math.sol",
+        "@balancer-labs/v2-solidity-utils/contracts/math/FixedPoint.sol",
+        "@balancer-labs/v2-solidity-utils/contracts/helpers/InputHelpers.sol",
+        "@balancer-labs/v2-solidity-utils/contracts/helpers/TemporarilyPausable.sol",
+        "@balancer-labs/v2-solidity-utils/contracts/helpers/WordCodec.sol",
+        "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/ERC20.sol",
+        "@balancer-labs/v2-vault/contracts/interfaces/IVault.sol",
+        "@balancer-labs/v2-vault/contracts/interfaces/IBasePool.sol",
+        "@balancer-labs/v2-asset-manager-utils/contracts/IAssetManager.sol",
+        "./BalancerPoolToken.sol",
+        "./BasePoolAuthorization.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "BasePool"
+      ]
+    },
+    "/Users/eitan/Documents/Projects/Blockchain/Hackathons/chainlink-2021/node_modules/@balancer-labs/v2-solidity-utils/contracts/helpers/WordCodec.sol": {
+      "lastModificationDate": 1637903061722,
+      "contentHash": "c0291ae507d00036c7699c324d78e938",
+      "sourceName": "@balancer-labs/v2-solidity-utils/contracts/helpers/WordCodec.sol",
+      "solcConfig": {
+        "version": "0.7.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "WordCodec"
+      ]
+    },
+    "/Users/eitan/Documents/Projects/Blockchain/Hackathons/chainlink-2021/node_modules/@balancer-labs/v2-vault/contracts/interfaces/IBasePool.sol": {
+      "lastModificationDate": 1637903086151,
+      "contentHash": "017fa50b02073c4f01368032aeeb2119",
+      "sourceName": "@balancer-labs/v2-vault/contracts/interfaces/IBasePool.sol",
+      "solcConfig": {
+        "version": "0.7.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IVault.sol",
+        "./IPoolSwapStructs.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "IBasePool"
+      ]
+    },
+    "/Users/eitan/Documents/Projects/Blockchain/Hackathons/chainlink-2021/node_modules/@balancer-labs/v2-asset-manager-utils/contracts/IAssetManager.sol": {
+      "lastModificationDate": 1637903121709,
+      "contentHash": "6a8dcb6ba2db9931787ed6c3058e9f4a",
+      "sourceName": "@balancer-labs/v2-asset-manager-utils/contracts/IAssetManager.sol",
+      "solcConfig": {
+        "version": "0.7.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/IERC20.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "IAssetManager"
+      ]
+    },
+    "/Users/eitan/Documents/Projects/Blockchain/Hackathons/chainlink-2021/node_modules/@balancer-labs/v2-pool-utils/contracts/BalancerPoolToken.sol": {
+      "lastModificationDate": 1637903121859,
+      "contentHash": "8c5f53aa2942d6d611f3bb9992a4e323",
+      "sourceName": "@balancer-labs/v2-pool-utils/contracts/BalancerPoolToken.sol",
+      "solcConfig": {
+        "version": "0.7.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/ERC20.sol",
+        "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/ERC20Permit.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "BalancerPoolToken"
+      ]
+    },
+    "/Users/eitan/Documents/Projects/Blockchain/Hackathons/chainlink-2021/node_modules/@balancer-labs/v2-pool-utils/contracts/BasePoolAuthorization.sol": {
+      "lastModificationDate": 1637903121861,
+      "contentHash": "cff493aaa80231e9e5c6b49d9ea9b5cb",
+      "sourceName": "@balancer-labs/v2-pool-utils/contracts/BasePoolAuthorization.sol",
+      "solcConfig": {
+        "version": "0.7.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@balancer-labs/v2-solidity-utils/contracts/helpers/Authentication.sol",
+        "@balancer-labs/v2-vault/contracts/interfaces/IAuthorizer.sol",
+        "./BasePool.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "BasePoolAuthorization"
+      ]
+    },
+    "/Users/eitan/Documents/Projects/Blockchain/Hackathons/chainlink-2021/node_modules/@balancer-labs/v2-vault/contracts/interfaces/IPoolSwapStructs.sol": {
+      "lastModificationDate": 1637903086151,
+      "contentHash": "5010973bfdbe8c7df9f80104c5049e05",
+      "sourceName": "@balancer-labs/v2-vault/contracts/interfaces/IPoolSwapStructs.sol",
+      "solcConfig": {
+        "version": "0.7.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/IERC20.sol",
+        "./IVault.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "IPoolSwapStructs"
+      ]
+    },
+    "/Users/eitan/Documents/Projects/Blockchain/Hackathons/chainlink-2021/node_modules/@balancer-labs/v2-vault/contracts/interfaces/IMinimalSwapInfoPool.sol": {
+      "lastModificationDate": 1637903086151,
+      "contentHash": "a23fccea796b26f00ddc81ae586fbc52",
+      "sourceName": "@balancer-labs/v2-vault/contracts/interfaces/IMinimalSwapInfoPool.sol",
+      "solcConfig": {
+        "version": "0.7.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IBasePool.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "IMinimalSwapInfoPool"
+      ]
+    },
+    "/Users/eitan/Documents/Projects/Blockchain/Hackathons/chainlink-2021/node_modules/@balancer-labs/v2-pool-utils/contracts/BaseMinimalSwapInfoPool.sol": {
+      "lastModificationDate": 1637903121859,
+      "contentHash": "1e6c7d7540df864ca11c5808b00fc35a",
+      "sourceName": "@balancer-labs/v2-pool-utils/contracts/BaseMinimalSwapInfoPool.sol",
+      "solcConfig": {
+        "version": "0.7.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./BasePool.sol",
+        "@balancer-labs/v2-vault/contracts/interfaces/IMinimalSwapInfoPool.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "BaseMinimalSwapInfoPool"
+      ]
+    },
+    "/Users/eitan/Documents/Projects/Blockchain/Hackathons/chainlink-2021/contracts/BaseWeightedPool.sol": {
+      "lastModificationDate": 1637980024628,
+      "contentHash": "8f63205c4536ba4527d9785adfe98706",
+      "sourceName": "contracts/BaseWeightedPool.sol",
+      "solcConfig": {
+        "version": "0.7.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@balancer-labs/v2-solidity-utils/contracts/math/FixedPoint.sol",
+        "@balancer-labs/v2-solidity-utils/contracts/helpers/InputHelpers.sol",
+        "@balancer-labs/v2-pool-utils/contracts/BaseMinimalSwapInfoPool.sol",
+        "./WeightedPoolUserData.sol",
+        "./WeightedMath.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "BaseWeightedPool"
+      ]
+    },
+    "/Users/eitan/Documents/Projects/Blockchain/Hackathons/chainlink-2021/contracts/WeightedPoolUserData.sol": {
+      "lastModificationDate": 1637979744452,
+      "contentHash": "cddcfcad9a17389c3b0f9e4d4e30572a",
+      "sourceName": "contracts/WeightedPoolUserData.sol",
+      "solcConfig": {
+        "version": "0.7.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/IERC20.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "WeightedPoolUserData"
+      ]
+    },
+    "/Users/eitan/Documents/Projects/Blockchain/Hackathons/chainlink-2021/contracts/WeightedPool.sol": {
+      "lastModificationDate": 1637979650105,
+      "contentHash": "e9a7f51111db0ac592d4c07d659c608c",
+      "sourceName": "contracts/WeightedPool.sol",
+      "solcConfig": {
+        "version": "0.7.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./BaseWeightedPool.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "WeightedPool"
       ]
     }
   }
